@@ -13,7 +13,7 @@ class Cafe:
         if visitor["vaccine"]["expiration_date"] < date.today():
             raise errors.OutdatedVaccineError(
                 "Visitor's vaccine must be up to date in order to visit cafe.")
-        if visitor["wearing_a_mask"] is False:
+        if not visitor.get("wearing_a_mask"):
             raise errors.NotWearingMaskError(
                 "Visitors must wear a mask in order to visit cafe.")
         return f"Welcome to {self.name}"

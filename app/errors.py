@@ -11,4 +11,4 @@ class OutdatedVaccineError(VaccineError):
 
 
 class NotWearingMaskError(Exception):
-    """Exception if visitor is not wearing a mask"""
+    """Exception if visitor is not wearing a mask."""

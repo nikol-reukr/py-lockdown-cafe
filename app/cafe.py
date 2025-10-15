@@ -15,5 +15,6 @@ class Cafe:
                 "Visitor's vaccine must be up to date in order to visit cafe.")
         if not visitor.get("wearing_a_mask"):
             raise errors.NotWearingMaskError(
-                "Visitors must wear a mask in order to visit cafe")
+                "Visitors must wear a mask in order to visit cafe.")
         return f"Welcome to {self.name}"
+
